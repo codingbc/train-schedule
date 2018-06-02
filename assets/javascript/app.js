@@ -1,3 +1,9 @@
+////////////////////////////////////////////////////////
+////////////////////  TRAIN        ////////////////////
+///////////////////      SCHEDULE ////////////////////
+/////////////////////////////////////////////////////
+
+
 
 // Global Variables
 var trainName = "";
@@ -14,17 +20,16 @@ var elTrainDestination = $("#train-destination");
 var elTrainTime = $("#train-time").mask("00:00");
 var elTimeFreq = $("#time-freq").mask("00");
 
-
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBXTueKf8_5sz0TC65OmlEgjV027ka1xB0",
-    authDomain: "train-schedule-6659e.firebaseapp.com",
-    databaseURL: "https://train-schedule-6659e.firebaseio.com",
-    projectId: "train-schedule-6659e",
-    storageBucket: "train-schedule-6659e.appspot.com",
-    messagingSenderId: "968608186844"
-  };
-  firebase.initializeApp(config);
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyBTkLGuXg1nYh7c6gtn02g8pJ-6FOfiqaI",
+  authDomain: "trains-b6b07.firebaseapp.com",
+  databaseURL: "https://trains-b6b07.firebaseio.com",
+  projectId: "trains-b6b07",
+  storageBucket: "trains-b6b07.appspot.com",
+  messagingSenderId: "554517465328"
+};
+firebase.initializeApp(config);
 
 // Assign the reference to the database to a variable named 'database'
 var database = firebase.database();
